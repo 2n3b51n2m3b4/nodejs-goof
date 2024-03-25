@@ -14,7 +14,7 @@ jobs:
         id: generate-sbom-and-upload-to-sbom-com-tr
         uses: sbomtr/scan@0.1.1
         with:
-          scan_type: 'trivyfs'
+          scanner_name: 'trivyfs'
           target: '.' # Assuming you want to scan the entire repository
   
       - name: Output SBOM URL
